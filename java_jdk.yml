@@ -3,8 +3,8 @@
   become: yes
   tasks: 
   - name: install jdk-8-jre
-        apt:
-           name: jdk-8-jre
-           state: present
+    apt:
+       name: jdk-8-jre
+       state: present
 
 
