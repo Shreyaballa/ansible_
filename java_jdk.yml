@@ -2,9 +2,9 @@
 - hosts: all
   become: yes
   tasks: 
-  - name: install jdk-8-jre
+  - name: install openjdk-8-jre
     apt:
-       name: jdk-8-jre
+       name: openjdk-8-jre
        state: present
 
 
