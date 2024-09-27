@@ -6,18 +6,18 @@
        command: hostname -f
        register: myresult
 
-    - name: i want display linux command output value
-      debug:
+     - name: i want display linux command output value
+       debug:
          msg: "{{myresult}}"
         
-    - name: i want to install git
-      apt:
+     - name: i want to install git
+       apt:
          name: git
          state: present
-      when: myresult.stderr == ""
+       when: myresult.stderr == ""
 
-    - name: i want to install tree
-      apt: 
-        name: tree
-        state: present
-      when: myresult.stderr != ""  
+     - name: i want to install tree
+       apt: 
+         name: tree
+         state: present
+       when: myresult.stderr != ""  
