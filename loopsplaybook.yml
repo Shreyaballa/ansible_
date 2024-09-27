@@ -8,7 +8,7 @@
   tasks: 
       - name: i want to display variable
         debug:
-           msg : "{{myvar3}}"
+           msg : "{{'myvar3'}}"
       - name: i want to install git
         apt:
            name: "{{item}}"
