@@ -1,5 +1,5 @@
 ---
-- hosts:javaserver
+- hosts: javaserver
   become: yes
   tasks: 
     - name: i want to create file into ansible-node
