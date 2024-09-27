@@ -1,0 +1,19 @@
+---
+- hosts: javaserver
+  become: yes
+  vars:
+    myvar1 : git
+    myvar2 : tree
+    myvar3 : apache2
+  tasks: 
+      - name: i want to display variable
+        debug:
+           msg : "{{myvar3}}"
+      - name: i want to install git
+        apt:
+           name: "{{item}}"
+           state: present
+        loop:
+         - "{{myvar}}"
+         - "{{myvar2}}"
+         - "{{myvar3}}"
