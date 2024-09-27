@@ -12,7 +12,7 @@
 
     - name: i want to replace apache vertex page
       template: 
-           src: newtemplatefile2.j2
+           src: newtemplatefile.j2
            dest: /var/www/html/index.html
       notify: restartedservice
 
