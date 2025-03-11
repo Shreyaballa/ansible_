@@ -1,0 +1,6 @@
+- hosts: web_servers
+  vars:
+    app_name: my_app
+  become: yes
+  roles:
+    - shreya_role 

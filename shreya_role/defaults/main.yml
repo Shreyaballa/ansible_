@@ -1,2 +1,4 @@
 ---
 # defaults file for shreya_role
+date: "{{ ansible_date_time.date }}"
+ 
